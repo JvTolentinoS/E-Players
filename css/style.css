@@ -233,12 +233,23 @@ body{
     height: 55em;
     background-color: var(--background2);
 }
-.noticia-container{
+
+.noticia-container{ 
     width: 80%;
     height: 100%;
     margin: auto;
     background-color: #c20000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+.noticia-content{
+    max-width: 65em;
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+}
+
 @media screen and (max-width: 74.93em){
 
 }
