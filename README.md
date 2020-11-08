@@ -1,2 +1,2 @@
-# E-Players
-Projeto de aprendizagem do curso de desenvolvimento de sistemas.
+# E-Players_20202SManha
+Projeto de aprendizagem do curso de desenvolvimento de sistemas

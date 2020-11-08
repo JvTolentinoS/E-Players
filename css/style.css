@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root{
-     
+
     --background: #000000;
-    --red: #c20000;
+    --red: #C20000;
     --blue: #001F70;
-    --background2: rgb(30, 28, 33);
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --black1: #1E1C21;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
 
     --font: 'Titillium Web', sans-serif;
-    --font2: 'Roboto', sans-serif;
 }
-
 
 *{
     margin: 0;
@@ -19,28 +17,25 @@
     border: 0;
     box-sizing: border-box;
 }
-
-
 body{
     font-family: var( --font );
-    background-color: var(--background);
+    font-size: 16px;
+    background-color: var( --background );
 }
-
+img{
+    width: 100%;
+}
 .topo{
     width: 100%;
     height: 5em;
-    font-size: 20px;
-}
-.flex-center-bt{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* background-color: azure; */
 }
 .content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     max-width: 75em;
     margin: auto;
+    /* background-color: burlywood; */
 }
 .flex-center-bt{
     display: flex;
@@ -49,6 +44,7 @@ body{
 }
 .topo img{
     max-width: 21.18em;
+
 }
 .menu{
     width: 100%;
@@ -61,17 +57,15 @@ body{
     justify-content: space-between;
 }
 .menu a{
-    color: #fff;
+    color:#fff;
     text-decoration: none;
     font-size: 1.5em;
     padding: 0.9em 0.5em;
     text-transform: uppercase;
 }
-
 .menu a:hover{
     background-color: var(--red);
 }
-
 #menu-bars{
     display: none;
 }
@@ -79,25 +73,25 @@ body{
     width: 100%;
     position: relative;
 }
-
 .banner-position{
     width: 100%;
     height: 100%;
+    /* background-color: rgba(0, 0, 255, 0.377); */
     position: absolute;
     top: 0;
 }
-
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
+    /* background-color: rgba(222, 184, 135, 0.356); */
     margin: auto;
     display: flex;
     justify-content: flex-end;
 }
-
 .banner-text{
     width: 50%;
     height: 100%;
+    /* background-color: chartreuse; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,7 +99,7 @@ body{
     color: #fff;
 }
 .banner-text h1{
-    font-size:5.62em;
+    font-size: 5.62em;
 }
 .banner-text p{
     font-size: 1.87em;
@@ -113,8 +107,8 @@ body{
 .banner-text a{
     font-size: 1.87em;
     text-transform: uppercase;
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
     background-color: var(--red);
     padding: 0.5em 1em;
     border-radius: 0.5em;
@@ -123,15 +117,15 @@ body{
 .jogos{
     width: 100%;
     height: 7.5em;
+    color:#fff;
+    /* background-color: chartreuse; */
 }
-
 .jogos ul{
-    list-style: none;
+    list-style-type: none;
     width: 100%;
 }
-
 .jogos ul a:hover img{
-    transition: 0.5s;
+    transition: 0.2s;
     transform: scale(1.1);
 }
 
@@ -140,101 +134,91 @@ body{
     height: 31.25em;
     background-color: var(--blue);
     position: relative;
-}
 
+}
 .about-angulation{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-items: center;
-    
+    justify-content: center;
     align-items: center;
 }
-
 .angulation{
     width: 100%;
     height: 24em;
-    background-color: #000000;
-    transform: skewY(-3deg);
+    background-color: #000;
+    transform: skewY(-3deg)
 }
-
 .about-position{
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
 }
-
 .about-text{
     width: 50%;
     color: #fff;
     text-align: justify;
 }
-
 .about-text h2{
     font-size: 2.18em;
+    margin-bottom: 0.5em;
+
+}
+.about-text p{
+    font-size: 1.125em;
     margin-bottom: 1em;
 }
-
 .about-position img{
     max-width: 31.87em;
 }
-/*Partidas atuais e futuras*/
-.partidas{
-    width: 100%;
-    height: 4em;
-    background-color: var(--background);
-    font-family: var(--font2);
-    color: #fff;
-    font-size: 1.875em;
+.jogos-aovivo, .jogos-embreve{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.575em; /*25,12px*/
+    /* border-right:solid 1px #fff; */
 }
-
-.partidas h2{
-    font-weight: 900;
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1.2em;
     text-transform: uppercase;
-    font-size: 1.1em;
+}
+.linha{
+    
+    height: 3em;
+    border:solid 1px #fff;
 }
 
-.partidas img{
-    max-width: 54px;
-    max-height: 54px;
-}
-
-.partidasposition{
-    width: 80%;
-    height: 100%;
-    /*background-color: chartreuse;*/
-    margin: auto;
-}
-
-.flex-evenly{
+.partida{
+    width: 9.5em;
+    /* background-color: red; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 1em;
 }
+.partida img{
+    max-width: 1.8em; /*54px*/
+}
+.time1, .time2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
 
-.aovivo{
-    width: 30%;
-    height: 100%;
-    /*background-color: brown;*/
-    float: left;
 }
-
-.embreve{
-    width: 55%;
-    height: 100%;
-    /*background-color: blue;*/
-    float: left;
-    margin-left: 2em;
+.time1 img{
+    margin-left: 0.5em;
 }
-/*-------------------Noticias-------------------*/
+.time2 img{
+    margin-right: 0.5em;
+}
 .bg-noticias{
     width: 100%;
     height: auto;
-    background-color: var(--background2);
+    background-color: var(--black1);
 }
 .noticias{
-    width: 73%;
+    width: 70%;
     height: 90%;
     /* background-color: darkgray; */
 }
@@ -243,9 +227,10 @@ body{
     margin: 0.5em 0;
     font-size: 2.1875em;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .proximos-jogos{
-    width: 25%;
+    width: 23%;
     height:auto;
 }
 .newscard{
@@ -255,7 +240,7 @@ body{
     background: var(--gradient);
     color: #fff;
     margin-bottom: 1.5em;
-    box-shadow: 0px 0px 15px rgb(10, 10, 10);
+    box-shadow: 0px 0px 15px rgb(20, 19, 19);
 }
 .noticias h3{
     padding: 0.5em;
@@ -265,20 +250,19 @@ body{
     padding: 0em 0.7em;
     /* text-align: justify; */
 }
-
 .wrap{
     flex-wrap: wrap;
 }
-
 .proximas-partidas{
+    width: 100%;
     background: var(--gradient);
     height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0px 0px 15px rgb(20, 19, 19);
 }
-
 .game{
     width: 90%;
     height: auto;
@@ -287,106 +271,234 @@ body{
     align-items: center;
     color:#fff;
 }
-
 .times{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .times div{
     display: flex;
     align-items: center;
 }
-
 .times p{
     font-size: 1.25em;
     font-family: 'Roboto';
 }
-
 .times > p{
     margin: 0 1em;
 }
-
 .times img{
     width: 2.5em;
 }
-
+.rodape{
+    padding: 1em 0;
+    color:#fff;
+}
 .logo-rodape{
     max-width: 18.75em;
 }
-
-.rodape{ 
-   padding: 1em 0;
-}
-
 .links-footer{
     width: 33%;
     display: flex;
     justify-content: space-between;
 }
-
 .links h2{
     font-size: 1.5em;
-    color: #ffffff;
-}
-
-.links ul{
     color: #fff;
+
+}
+.links ul{
+    color:#fff;
     margin-top: 0.5em;
 }
-
 .links li{
     margin-left: 2em;
 }
-
 .links a{
     text-decoration: none;
-    color: #fff;
+    color:#fff;
 }
-
 .sociais{
     width: 33%;
-    color: #fff;
-}
 
+}
 .newslatter h2{
     font-size: 0.875em;
     margin-bottom: 0.5em;
 }
-
+.newslatter form{
+    display: flex;
+}
 .newslatter input[type="email"]{
     width: 12.5em;
     height: 2.5em;
     font-size: 1.1em;
     padding-left: 1em;
 }
-
 .newslatter input[type="email"]::placeholder{
-    color: #ccc;
+    color: rgb(102, 102, 102);
     font-weight: bold;
 }
-
 .newslatter input[type="submit"]{
     width: 9.75em;
     height: 2.5em;
     font-size: 1.1em;
-    background-color: #8326ef;
+    background-color: #8326EF;
     color: #fff;
     text-transform: uppercase;
 }
-
 .siga-nos{
     margin-top: 1em;
 }
+/* página cadastro */
+
+/*1199px*/
 @media screen and (max-width: 74.93em){
-
+    .menu a{
+        font-size: 1.15em;
+    }
+    .topo img {
+        max-width: 15.18em;
+    }
+    .banner-text h1 {
+        font-size: 3.7em;
+    }
+    .banner-text p {
+        font-size: 1.2em;
+    }
+    .banner-text a{
+        font-size: 1.2em;
+    }
+    .jogos{
+        height: auto;
+        flex-direction: column;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .noticias h2, .proximos-jogos h2{
+        white-space: normal;
+    }
+    .proximas-partidas{
+        height: 680px;
+    }
+    .times > p {
+        margin: 0 0.5em;
+    }
+    .newslatter input[type="email"] {
+        display: none;
+    }
+    .times p {
+        font-size: 1.1em;
+        font-family: 'Roboto';
+    }
+    .about-position img {
+        max-width: 26.87em;
+    }
+    .about-text h2 {
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+    }
+    .logo-rodape {
+        max-width: 13.75em;
+    }    
 }
-
-@media screen and (max-width: 767px){
-
-} 
-
-@media screen and (max-width: 575px){
-    
+/*767px*/
+@media screen and (max-width: 47.93em){
+    #meusLinks{
+        display: none;
+    }
+    .about-text{
+        width: 100%;
+    }
+    .logo-lol{
+        display: none;
+    }
+    .jogos-aovivo, .jogos-embreve {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .banner-text h1 {
+        font-size: 2.7em;
+    }
+    .banner-text p {
+        font-size: 1em;
+    }
+    .banner-text a {
+        font-size: 1.1em;
+    }
+    .noticias h2, .proximos-jogos h2 {
+        font-size: 1.5em;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .proximos-jogos{
+        width: 40%;
+    }
+    .times p {
+        font-size: 1.5em;
+        font-family: 'Roboto';
+    }
+    .noticias {
+        width: 100%;
+    }
+    .logo-rodape {
+        max-width: 9.75em;
+    }   
+    .links-footer {
+        width: 33%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .siga-nos h2{
+        display: none;
+    }
+}
+/*575px*/
+@media screen and (max-width: 35.93em){
+    .noticias {
+        width: 60%;
+        height: 90%;
+        /* background-color: darkgray; */
+    }
+    .wrap{
+        flex-direction: column;
+    }
+    .proximos-jogos {
+        width: 64%;
+    }
+    .sociais {
+        width: 50%;
+    }
+    .banner-text h1 {
+        font-size: 1.7em;
+    }
+    .banner-text p {
+        font-size: 0.7em;
+    }
+    .banner-text a {
+        font-size: 0.8em;
+    }
+    .links h2 {
+        font-size: 1.1em;
+        color: #fff;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .links-footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .none{
+        display: none;
+    }
+    .logo-rodape {
+        max-width: 9.75em;
+    }
 }
